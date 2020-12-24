@@ -11,9 +11,9 @@
 
     <!-- 父级项目 -->
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.8.RELEASE</version>
+        <groupId>com.mmc</groupId>
+        <artifactId>mmcparent</artifactId>
+        <version>0.01-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -28,7 +28,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.5.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -51,20 +50,17 @@
         <dependency>
             <groupId>net.sf.json-lib</groupId>
             <artifactId>json-lib</artifactId>
-            <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
 
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.4</version>
         </dependency>
     </dependencies>
 
     <build>
         <finalName>common-0.01</finalName>
-
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <!-- maven插件 -->
@@ -75,7 +71,6 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.3.2</version>
                     <configuration>
                         <excludes>
                             <exclude>/**.yml</exclude>
