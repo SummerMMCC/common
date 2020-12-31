@@ -1,4 +1,4 @@
-package com.mmc.common.base;
+package com.mmc.common.base.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;

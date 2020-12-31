@@ -1,6 +1,6 @@
 package com.mmc.common.controller;
 
-import com.mmc.common.base.JSONUtil;
+import com.mmc.common.base.util.JSONUtil;
 import org.junit.Test;
 import org.springframework.web.bind.annotation.ResponseBody;
 

@@ -1,1 +1,4 @@
-/Volumes/MMD/java/common/src/main/java/com/mmc/common/base/JSONUtil.java
+/Volumes/MMD/java/common/src/main/java/com/mmc/common/base/dto/BaseDTO.java
+/Volumes/MMD/java/common/src/main/java/com/mmc/common/base/util/AutoMapper.java
+/Volumes/MMD/java/common/src/main/java/com/mmc/common/base/util/JSONUtil.java
+/Volumes/MMD/java/common/src/main/java/com/mmc/common/base/vo/Result.java

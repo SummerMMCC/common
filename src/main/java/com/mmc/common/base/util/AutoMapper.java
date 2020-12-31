@@ -1,10 +1,11 @@
-package com.mmc.common.base;
+package com.mmc.common.base.util;
 
 import java.lang.reflect.Method;
 import java.util.List;
 
-public class AutoMapperObject {
-    public static <TSource, TDestination> void mappingDtoToModel(TSource source, TDestination destination) {
+public class AutoMapper {
+
+    public static <TSource, TDestination> void mapping(TSource source, TDestination destination) {
         Method[] srcMethods = source.getClass().getMethods();
         Method[] destMethods = destination.getClass().getMethods();
         for (Method m : srcMethods) {
@@ -25,13 +26,12 @@ public class AutoMapperObject {
         }
     }
 
-
-    public static <S, T> List<T> mappingDtoToModelList(List<S> src, List<T> target, Class<?> targetClass) {
+    public static <S, T> List<T> mappingList(List<S> src, List<T> target, Class<?> targetClass) {
         for (int i = 0; i < src.size(); i++) {
             try {
                 Object object = targetClass.newInstance();
                 target.add((T) object);
-                mappingDtoToModel(src.get(i), object);
+                mapping(src.get(i), object);
             } catch (Exception e) {
                 continue;// 某个方法反射异常
             }

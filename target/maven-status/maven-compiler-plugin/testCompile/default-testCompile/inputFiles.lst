@@ -1,3 +1,5 @@
+/Volumes/MMD/java/common/src/test/java/com/mmc/common/dto/BaseDTO.java
+/Volumes/MMD/java/common/src/test/java/com/mmc/common/vo/Result.java
 /Volumes/MMD/java/common/src/test/java/com/mmc/common/base/JSONUtil.java
 /Volumes/MMD/java/common/src/test/java/com/mmc/common/controller/IndexController.java
-/Volumes/MMD/java/common/src/test/java/com/mmc/common/base/AutoMapperObject.java
+/Volumes/MMD/java/common/src/test/java/com/mmc/common/base/AutoMapper.java

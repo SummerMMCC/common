@@ -1,3 +1,5 @@
-com/mmc/common/base/AutoMapperObject.class
+com/mmc/common/base/AutoMapper.class
+com/mmc/common/vo/Result.class
 com/mmc/common/base/JSONUtil.class
 com/mmc/common/controller/IndexController.class
+com/mmc/common/dto/BaseDTO.class
