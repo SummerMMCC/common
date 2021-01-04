@@ -17,8 +17,25 @@ public class Result<T> {
         this.setData(t);
     }
 
+    Result(Integer i, T t) {
+        this.setCode(i);
+        this.setData(t);
+    }
+
+    Result(Integer i) {
+        this.setCode(i);
+    }
+
     public static <T> Result<T> success(String msg, T t) {
         return new Result<T>(200, msg, t);
+    }
+
+    public static <T> Result<T> success() {
+        return new Result<T>(200);
+    }
+
+    public static <T> Result<T> success(T t) {
+        return new Result<T>(200, t);
     }
 
     public static <T> Result<T> error(String msg) {
